@@ -61,7 +61,7 @@ a:hover { color: var(--red); }
 .btn:active { transform: translate(2px, 2px); }
 .btn:disabled { opacity: 0.7; cursor: default; transform: none; }
 .btn:focus-visible, .input:focus { outline: 3px solid var(--blue); outline-offset: 3px; }
-.btn-sm { font-family: var(--text); font-weight: 800; font-size: 18px; padding: 0 20px; min-height: 44px; white-space: nowrap; }
+.btn-sm { font-family: var(--text); font-weight: 800; font-size: 18px; padding: 0 20px; min-height: 44px; white-space: nowrap; background: var(--cream); }
 .btn-lg { align-self: flex-start; font-size: 20px; padding: 0 32px; min-height: 60px; border: none; box-shadow: 4px 4px 0 var(--maroon); }
 .btn-dark { color: var(--cream); background: var(--maroon); border: none; box-shadow: 4px 4px 0 var(--red); }
 
@@ -132,16 +132,16 @@ a:hover { color: var(--red); }
 .nav {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 16px;
   padding: 20px var(--gutter) 20px;
 }
-.nav-links { display: flex; gap: 32px; flex-wrap: wrap; align-items: center; font-weight: 800; font-size: 18px; }
+.nav-links { display: flex; gap: 32px; flex-wrap: nowrap; align-items: center; font-weight: 800; font-size: 18px; }
 .nav-links a { color: var(--maroon); text-decoration: none; }
 .nav-links a:hover { color: var(--red); }
 .nav-right { justify-content: flex-end; }
-.nav-logo { height: 72px; width: auto; display: block; }
+.nav-logo { height: 72px; width: auto; display: block; justify-self: center; }
 .hero-body {
   position: relative;
   flex: 1;
@@ -426,6 +426,7 @@ a:hover { color: var(--red); }
   .nav-logo { order: -1; height: 56px; }
   .nav-links:first-child { display: none; }
   .nav-right { gap: 20px; }
+  .nav-right a { display: none; }
 }
 
 /* Phone */
