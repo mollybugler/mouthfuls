@@ -251,6 +251,27 @@ a:hover { color: var(--red); }
 .game-row { display: flex; flex-wrap: wrap; gap: 48px 64px; align-items: center; }
 .game-text { flex: 1 1 420px; max-width: 540px; display: flex; flex-direction: column; gap: 16px; }
 .game-copy { font-weight: 500; }
+.game-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 500;
+}
+.game-list li { padding-left: 22px; position: relative; }
+.game-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--maroon);
+}
+.game-list strong { font-family: var(--display); font-weight: 700; }
 .cards { flex: 1 1 320px; padding: 12px; display: grid; grid-template-columns: repeat(2, 155px); justify-content: center; gap: 14px; align-content: center; }
 .card {
   border: 3px solid var(--maroon);
