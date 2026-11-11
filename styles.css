@@ -50,7 +50,7 @@ a:hover { color: var(--red); }
   font-size: 19px;
   color: var(--maroon);
   background: var(--sky);
-  border: 3px solid var(--maroon);
+  border: none;
   border-radius: 999px;
   padding: 0 28px;
   min-height: 56px;
@@ -62,8 +62,8 @@ a:hover { color: var(--red); }
 .btn:disabled { opacity: 0.7; cursor: default; transform: none; }
 .btn:focus-visible, .input:focus { outline: 3px solid var(--blue); outline-offset: 3px; }
 .btn-sm { font-family: var(--text); font-weight: 800; font-size: 18px; padding: 0 20px; min-height: 44px; white-space: nowrap; }
-.btn-lg { align-self: flex-start; font-size: 20px; padding: 0 32px; min-height: 60px; box-shadow: 4px 4px 0 var(--maroon); }
-.btn-dark { color: var(--cream); background: var(--maroon); box-shadow: 4px 4px 0 var(--red); }
+.btn-lg { align-self: flex-start; font-size: 20px; padding: 0 32px; min-height: 60px; border: none; box-shadow: 4px 4px 0 var(--maroon); }
+.btn-dark { color: var(--cream); background: var(--maroon); border: none; box-shadow: 4px 4px 0 var(--red); }
 
 .label { font-weight: 800; font-size: 15px; }
 .input {
@@ -73,7 +73,7 @@ a:hover { color: var(--red); }
   font-size: 18px;
   color: var(--maroon);
   background: var(--cream);
-  border: 3px solid var(--maroon);
+  border: none;
   border-radius: 999px;
 }
 .input-white { background: #fff; }
@@ -101,7 +101,6 @@ a:hover { color: var(--red); }
 /* Announcement */
 .announce {
   background: var(--sky);
-  border-bottom: 3px solid var(--maroon);
   padding: 10px 16px;
   text-align: center;
   font-weight: 800;
@@ -190,7 +189,6 @@ a:hover { color: var(--red); }
   flex-direction: column;
   gap: 4px;
   background: var(--cream);
-  border: 3px solid var(--maroon);
   border-radius: 24px;
   padding: 16px 24px;
   box-shadow: 6px 6px 0 var(--red);
@@ -205,7 +203,7 @@ a:hover { color: var(--red); }
 .about-media { flex: 1 1 380px; min-width: 0; position: relative; padding: 24px; }
 .about-photo {
   display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover;
-  border-radius: 32px; border: 4px solid var(--maroon); box-shadow: 10px 10px 0 var(--red);
+  border-radius: 32px; box-shadow: 10px 10px 0 var(--red);
   transform: scaleX(-1);
 }
 .about-photo-texture {
@@ -246,7 +244,7 @@ a:hover { color: var(--red); }
 }
 
 /* Game */
-.game { padding: 72px var(--gutter); background: var(--pink); }
+.game { padding: 72px var(--gutter); background: var(--cream); }
 .game-inner { max-width: 1180px; margin: 0 auto; }
 .game-row { display: flex; flex-wrap: wrap; gap: 48px 64px; align-items: center; }
 .game-text { flex: 1 1 420px; max-width: 540px; display: flex; flex-direction: column; gap: 16px; }
@@ -274,7 +272,6 @@ a:hover { color: var(--red); }
 .game-list strong { font-family: var(--display); font-weight: 700; }
 .cards { flex: 1 1 320px; padding: 12px; display: grid; grid-template-columns: repeat(2, 155px); justify-content: center; gap: 14px; align-content: center; }
 .card {
-  border: 3px solid var(--maroon);
   border-radius: 18px;
   aspect-ratio: 5 / 7;
   padding: 14px;
@@ -319,7 +316,6 @@ a:hover { color: var(--red); }
   align-items: center;
   gap: 20px;
   background: var(--cream);
-  border: 3px solid var(--maroon);
   border-radius: 24px;
   padding: 20px 24px;
   box-shadow: 6px 6px 0 var(--red);
@@ -341,7 +337,7 @@ a:hover { color: var(--red); }
   color: var(--maroon);
   background: var(--sky);
   text-decoration: none;
-  border: 3px solid var(--maroon);
+  border: none;
   border-radius: 999px;
   padding: 0 26px;
   min-height: 48px;
@@ -384,7 +380,6 @@ a:hover { color: var(--red); }
   width: 100%;
   max-width: 520px;
   background: var(--cream);
-  border: 4px solid var(--maroon);
   border-radius: 32px;
   box-shadow: 10px 10px 0 var(--red);
   padding: 48px 40px 40px;
